@@ -1,0 +1,14 @@
+# Binaries
+out
+
+# OS-specific
+.DS_Store
+
+# IDEs/editors
+.vscode/
+*.swp
+
+# Go build cache
+bin/
+pkg/
+.env
