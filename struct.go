@@ -12,6 +12,7 @@ type apiConfig struct {
 	fileserverHits atomic.Int32
 	DB             *database.Queries
 	PLATFORM       string
+	jwtSecret      string // Add this line
 }
 
 type validateChirpRequest struct {
@@ -30,5 +31,6 @@ type User struct {
 }
 
 type createUserRequest struct {
-	Email string `json:"email"`
+	Email    string `json:"email"`
+	Password string `json:"password"`
 }
